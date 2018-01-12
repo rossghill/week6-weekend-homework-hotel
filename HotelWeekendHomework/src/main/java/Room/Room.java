@@ -1,15 +1,18 @@
 package Room;
 
+import java.util.ArrayList;
+
 public class Room {
 
     protected int capacity;
-    protected String guests;
+//    protected String guests;
+    protected ArrayList<Guest>  guests;
 
 //    enum roomType;
 
-    public Room(int capacity, String guests) {
+    public Room(int capacity) {
         this.capacity = capacity;
-        this.guests = guests;
+        this.guests = new ArrayList<>();
 //        this.roomType = roomType;
     }
 
