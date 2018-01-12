@@ -1,8 +1,6 @@
-import RoomTypes.Bedroom;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.sun.webkit.PageCache.getCapacity;
 import static org.junit.Assert.assertEquals;
 
 public class BedroomTest {

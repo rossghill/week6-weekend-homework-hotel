@@ -1,8 +1,3 @@
-package RoomTypes;
-
-import Room.Room;
-
-
 public class Bedroom extends Room {
 
     protected boolean chargeable;

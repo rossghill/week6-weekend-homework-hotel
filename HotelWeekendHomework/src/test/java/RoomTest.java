@@ -1,4 +1,3 @@
-import Room.Room;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +9,7 @@ public class RoomTest {
 
     @Before
     public void before() {
-        room = new Room(4, "Jim, Steve");
+        room = new Room(4, );
     }
 
     @Test
@@ -19,8 +18,8 @@ public class RoomTest {
     }
 
     @Test
-    public void roomHasGuests() {
-        assertEquals("Jim, Steve", room.getGuests());
+    public void roomIsEmpty() {
+        assertEquals(0, room.countGuests());
     }
 
 //    @Test

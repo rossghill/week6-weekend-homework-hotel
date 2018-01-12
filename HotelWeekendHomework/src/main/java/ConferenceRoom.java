@@ -1,7 +1,3 @@
-package RoomTypes;
-
-import Room.Room;
-
 public class ConferenceRoom extends Room {
 
     private boolean chargeable;
