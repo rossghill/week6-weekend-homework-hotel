@@ -20,6 +20,10 @@ public class Room {
         return this.guests.size();
     }
 
+    public void checkIn(guests) {
+
+    }
+
 //    public long getRoomType() {
 //        return roomType;
 //    }

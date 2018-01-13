@@ -4,14 +4,14 @@ public enum RoomType {
         DOUBLE(2),
         FAMILY(6);
 
-        private int roomType;
+        private final int capacity;
 
-        RoomType(int roomType) {
-            this.roomType = roomType;
+        RoomType(int capacity) {
+            this.capacity = capacity;
         }
 
-        public int getRoomType() {
-            return roomType;
+        public int getCapacity() {
+            return capacity;
         }
     }
 

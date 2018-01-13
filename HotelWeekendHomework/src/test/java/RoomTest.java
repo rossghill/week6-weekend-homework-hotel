@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class RoomTest {
@@ -9,7 +11,17 @@ public class RoomTest {
 
     @Before
     public void before() {
-        room = new Room(4, );
+        ArrayList<Guest> arrayList = new ArrayList<>();
+        arrayList.add(new Guest("hi"));
+
+        room = new Room(4);
+    }
+
+    @Test
+    public void canCheckInNewGuest() {
+        Guest charlie = new Guest("Charlie Kelly");
+        room.checkIn(charlie);
+        assertEquals()
     }
 
     @Test

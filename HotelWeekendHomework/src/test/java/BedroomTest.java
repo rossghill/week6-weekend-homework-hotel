@@ -10,8 +10,8 @@ public class BedroomTest {
 
     @Before
     public void before() {
-        bedroom1 = new Bedroom(2, "Ross", true, 45 );
-        bedroom2 = new Bedroom(4, "Maureen, Gordon", true, 67);
+        bedroom1 = new Bedroom(2, true, 45 );
+        bedroom2 = new Bedroom(4, true, 67);
     }
 
     @Test
