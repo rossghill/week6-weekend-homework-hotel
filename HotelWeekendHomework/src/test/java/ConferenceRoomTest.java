@@ -15,13 +15,27 @@ public class ConferenceRoomTest {
     }
 
     @Test
-    public void roomHasGuests() {
-//        assertEquals("Charlie, Frank, Dee", conferenceRoom1.getGuests());
+    public void roomHasCapacity() {
+        assertEquals(28, conferenceRoom1.getCapacity());
+    }
+
+    @Test
+    public void roomIsChargeable() {
+        assertEquals(false, conferenceRoom1.isChargeable());
     }
 
     @Test
     public void roomHasName() {
         assertEquals("Meeting Room B", conferenceRoom2.getName());
     }
+
+//    @Test
+//    public void roomHasGuests() {
+////        assertEquals("Charlie, Frank, Dee", conferenceRoom1.getGuests());
+//    }
+
+
+
+
 
 }

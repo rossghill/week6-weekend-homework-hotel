@@ -14,4 +14,8 @@ public class ConferenceRoom extends Room {
     public String getName() {
         return name;
     }
+
+    public boolean isChargeable() {
+        return chargeable;
+    }
 }

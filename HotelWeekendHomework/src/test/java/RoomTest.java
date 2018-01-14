@@ -34,8 +34,11 @@ public class RoomTest {
         assertEquals(1, room.countGuests());
     }
 
-//    @Test
-//    public void roomHasType() {
-//        assertEquals(   , room.getRoomType());
-//    }
+    @Test
+    public void addingGuestReducesCapacity() {
+        Guest charlie = new Guest("Charlie Kelly");
+        room.checkIn(charlie);
+        assertEquals(3, room.getCapacity());
+    }
+
 }
