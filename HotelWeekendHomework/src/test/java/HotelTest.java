@@ -76,6 +76,7 @@ public class HotelTest {
         bedroom1.checkIn(guest2);
         bedroom1.checkOut(guest1);
         bedroom1.checkOut(guest2);
+        assertEquals(0, bedroom1.countGuests());
     }
 
 }
