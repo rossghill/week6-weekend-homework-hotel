@@ -9,16 +9,11 @@ public class DiningRoomTest {
 
     @Before
     public void before() {
-//        diningroom = new DiningRoom(56, "James, Charles, Cuthbert");
+        diningroom = new DiningRoom(56);
     }
 
     @Test
     public void diningRoomHasCapacity() {
         assertEquals(56, diningroom.getCapacity());
-    }
-
-    @Test
-    public void diningRoomHasGuests() {
-//        assertEquals("James, Charles, Cuthbert", diningroom.getGuests());
     }
 }

@@ -11,6 +11,8 @@ public class HotelTest {
    Bedroom bedroom1;
    Bedroom bedroom2;
    Bedroom bedroom3;
+   Guest guest1;
+   Guest guest2;
    ArrayList<Bedroom> bedrooms;
    DiningRoom diningRoom;
    ArrayList<DiningRoom> diningRooms;
@@ -31,6 +33,8 @@ public class HotelTest {
        diningRooms = new ArrayList<>();
        diningRooms.add(diningRoom);
        hotel1 = new Hotel("Premier Inn", bedrooms, conferenceRooms, diningRooms);
+       guest1 = new Guest("Dennis Reynolds");
+       guest2 = new Guest("Charlie Kelly");
    }
 
    @Test
@@ -52,5 +56,23 @@ public class HotelTest {
     public void hotelHasDiningRooms() {
         assertEquals(diningRooms, hotel1.getDiningRooms());
     }
+
+    @Test
+    public void canCheckInGuest() {
+        bedroom1.checkIn(guest1);
+        assertEquals(1, bedroom1.countGuests());
+    }
+
+    @Test
+    public void canCheckInMultipleGuests() {
+        bedroom1.checkIn(guest1);
+        bedroom1.checkIn(guest2);
+        assertEquals(2, bedroom1.countGuests());
+    }
+
+//    @Test
+//    public void canCheckOutGuest() {
+//
+//    }
 
 }

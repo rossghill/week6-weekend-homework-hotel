@@ -20,7 +20,7 @@ public class Room {
 
     public void checkIn(Guest guests) {
         guestsInRoom.add(guests);
-        capacity = capacity - guestsInRoom.size();
+        capacity = this.capacity - guestsInRoom.size();
     }
 
 }
