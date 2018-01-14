@@ -18,4 +18,19 @@ public class Hotel {
     }
 
 
+    public String getName() {
+        return hotelName;
+    }
+
+    public ArrayList<Bedroom> getBedrooms() {
+        return bedrooms;
+    }
+
+    public ArrayList<ConferenceRoom> getConferenceRooms() {
+        return conferenceRooms;
+    }
+
+    public ArrayList<DiningRoom> getDiningRooms() {
+        return diningRooms;
+    }
 }

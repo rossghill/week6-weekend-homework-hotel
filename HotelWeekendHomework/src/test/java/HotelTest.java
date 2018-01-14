@@ -1,6 +1,4 @@
 import org.junit.Before;
-
-import Room.Bedroom;
 import org.junit.Test;
 
 import java.util.ArrayList;
