@@ -23,4 +23,10 @@ public class Room {
         capacity = this.capacity - guestsInRoom.size();
     }
 
+    public void checkOut(Guest guests) {
+        if (guestsInRoom.size() >= 0) {
+            guestsInRoom.remove(guests);
+            capacity = this.capacity + guestsInRoom.size();
+        }
+    }
 }

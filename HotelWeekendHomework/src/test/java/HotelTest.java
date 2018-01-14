@@ -70,9 +70,12 @@ public class HotelTest {
         assertEquals(2, bedroom1.countGuests());
     }
 
-//    @Test
-//    public void canCheckOutGuest() {
-//
-//    }
+    @Test
+    public void canCheckOutGuest() {
+        bedroom1.checkIn(guest1);
+        bedroom1.checkIn(guest2);
+        bedroom1.checkOut(guest1);
+        bedroom1.checkOut(guest2);
+    }
 
 }
