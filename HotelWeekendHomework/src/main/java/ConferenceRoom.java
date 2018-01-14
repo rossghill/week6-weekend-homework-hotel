@@ -12,9 +12,6 @@ public class ConferenceRoom extends Room {
     }
 
     public String getName() {
-
-        System.out.println(this.guests);
-
         return name;
     }
 }

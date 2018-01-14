@@ -8,20 +8,18 @@ import static org.junit.Assert.assertEquals;
 public class RoomTest {
 
     Room room;
+    Guest guestsInRoom;
 
     @Before
     public void before() {
-        ArrayList<Guest> arrayList = new ArrayList<>();
-        arrayList.add(new Guest("hi"));
-
+        ArrayList<Guest> guestsInRoom = new ArrayList<>();
+        guestsInRoom.add(new Guest("Charlie Kelly"));
         room = new Room(4);
     }
 
     @Test
-    public void canCheckInNewGuest() {
-        Guest charlie = new Guest("Charlie Kelly");
-        room.checkIn(charlie);
-        assertEquals()
+    public void roomIsEmpty() {
+        assertEquals(0, room.countGuests());
     }
 
     @Test
@@ -30,8 +28,10 @@ public class RoomTest {
     }
 
     @Test
-    public void roomIsEmpty() {
-        assertEquals(0, room.countGuests());
+    public void canCheckInNewGuest() {
+        Guest charlie = new Guest("Charlie Kelly");
+        room.checkIn(charlie);
+        assertEquals(1, room.countGuests());
     }
 
 //    @Test

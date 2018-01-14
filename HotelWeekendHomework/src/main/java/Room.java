@@ -3,13 +3,11 @@ import java.util.ArrayList;
 public class Room {
 
     protected int capacity;
-    protected ArrayList<Guest> guests;
-//    enum roomType;
+    protected ArrayList<Guest> guestsInRoom;
 
     public Room(int capacity) {
         this.capacity = capacity;
-        this.guests = new ArrayList<Guest>();
-//      this.roomType = roomType;
+        this.guestsInRoom = new ArrayList<>();
     }
 
     public int getCapacity() {
@@ -17,11 +15,11 @@ public class Room {
     }
 
     public int countGuests() {
-        return this.guests.size();
+        return this.guestsInRoom.size();
     }
 
-    public void checkIn(guests) {
-
+    public void checkIn(Guest guests) {
+        guestsInRoom.add(guests);
     }
 
 //    public long getRoomType() {
