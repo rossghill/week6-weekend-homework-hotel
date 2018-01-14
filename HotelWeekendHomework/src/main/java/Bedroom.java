@@ -4,11 +4,14 @@ public class Bedroom extends Room {
 
     protected boolean chargeable;
     protected int roomNumber;
+    RoomType roomType;
 
-    public Bedroom(int capacity, boolean chargeable, int roomNumber){
+
+    public Bedroom(int capacity, boolean chargeable, int roomNumber, RoomType roomType){
         super(capacity);
         this.chargeable = chargeable;
         this.roomNumber = roomNumber;
+        this.roomType = roomType;
     }
 
     public int getRoomNumber() {
@@ -17,5 +20,9 @@ public class Bedroom extends Room {
 
     public boolean isChargeable() {
         return chargeable;
+    }
+
+    public RoomType getRoomType() {
+        return roomType;
     }
 }
