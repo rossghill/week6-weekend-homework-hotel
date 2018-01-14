@@ -29,10 +29,6 @@ public class ConferenceRoomTest {
         assertEquals("Meeting Room B", conferenceRoom2.getName());
     }
 
-//    @Test
-//    public void roomHasGuests() {
-////        assertEquals("Charlie, Frank, Dee", conferenceRoom1.getGuests());
-//    }
 
 
 

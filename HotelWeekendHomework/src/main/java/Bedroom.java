@@ -4,7 +4,7 @@ public class Bedroom extends Room {
 
     protected boolean chargeable;
     protected int roomNumber;
-    RoomType roomType;
+    protected RoomType roomType;
 
 
     public Bedroom(int capacity, boolean chargeable, int roomNumber, RoomType roomType){
