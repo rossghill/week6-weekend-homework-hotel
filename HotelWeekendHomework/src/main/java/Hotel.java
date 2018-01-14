@@ -33,4 +33,6 @@ public class Hotel {
     public ArrayList<DiningRoom> getDiningRooms() {
         return diningRooms;
     }
+
+
 }

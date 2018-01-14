@@ -32,9 +32,9 @@ public class HotelTest {
        conferenceRooms.add(conferenceRoom);
        diningRooms = new ArrayList<>();
        diningRooms.add(diningRoom);
-       hotel1 = new Hotel("Premier Inn", bedrooms, conferenceRooms, diningRooms);
        guest1 = new Guest("Dennis Reynolds");
        guest2 = new Guest("Charlie Kelly");
+       hotel1 = new Hotel("Premier Inn", bedrooms, conferenceRooms, diningRooms);
    }
 
    @Test
@@ -77,6 +77,12 @@ public class HotelTest {
         bedroom1.checkOut(guest1);
         bedroom1.checkOut(guest2);
         assertEquals(0, bedroom1.countGuests());
+    }
+
+    @Test
+    public void checkNamesOfGuestsInRoom() {
+        bedroom1.checkIn(guest1);
+        assertEquals("Dennis Reynolds", bedroom1.getGuestNames());
     }
 
 }

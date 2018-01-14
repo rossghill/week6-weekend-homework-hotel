@@ -29,4 +29,12 @@ public class Room {
             capacity = this.capacity + guestsInRoom.size();
         }
     }
+
+//    public String getGuestAtIndex(int index){
+//        return this.guestsInRoom.get(index);
+//    }
+
+//    public ArrayList<Guest> getGuestNames() {
+//        return this.guestsInRoom.get(0);
+//    }
 }
